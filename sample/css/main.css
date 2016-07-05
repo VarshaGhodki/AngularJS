@@ -1,0 +1,26 @@
+.image{
+  width:100px;
+  height:150px;
+}
+.likes{
+    border-radius:50%;
+    background-color:green;
+    height:30px;
+    width:30px;
+    line-height:30px;
+    text-align:center;
+    display:inline-block;
+    color:#fff;
+    cursor:pointer;
+}
+.dislikes{
+    border-radius:50%;
+    background-color:grey;
+    height:30px;
+    width:30px;
+    line-height:30px;
+    text-align:center;
+    display:inline-block;
+    color:#fff;
+    cursor:pointer;
+}

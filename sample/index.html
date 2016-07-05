@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+<link rel="stylesheet" href="css/main.css" />
+
+<body ng-app="firstApp">
+  <div>
+    <div ng-controller="mainController">
+      <div ng-repeat="x in products">
+        <h3> {{x.title}}</h3>
+        <img class="image" ng-src={{x.coverPage}} />
+        <div class="likes" ng-click="plusOne($index)">+{{x.likes}}</div>
+        <div class="dislikes" ng-click="minusOne($index)">-{{x.dislikes}}</div>
+      </div>
+    </div>
+  </div>
+  <!-- Modules -->
+  <script src=" js/main.js "></script>
+
+  <!-- Controllers -->
+  <script src="js/controllers/mainController.js "></script>
+</body>
+
+</html>

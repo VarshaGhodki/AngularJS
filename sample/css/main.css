@@ -24,3 +24,49 @@
     color:#fff;
     cursor:pointer;
 }
+.productContainer{
+    width: 200px;
+    display: inline-block;
+    border: 1px solid #76B;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 5px #888888;
+}
+/*--------styles for custom directives appInfo--------------*/
+.icon
+{
+  width:100px;
+  height:200px
+}
+.title{
+     color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.developer {
+    color: #afafaf;
+    font-size: 14px;
+}
+.price{
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    bottom: 100px;
+    right: 20px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background: #fff;
+    border-bottom: 5px solid #000;
+    text-align: center;
+}
+
+.card{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    margin: 0 2px;
+    position: relative;
+}

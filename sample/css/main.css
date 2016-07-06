@@ -70,3 +70,18 @@
     margin: 0 2px;
     position: relative;
 }
+.button{
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    line-height: 30px;
+    box-shadow: 4px 1px 10px #777;
+    cursor: pointer;
+    background: green;
+    color:#fff;
+}
+
+.active .button{
+    background: #007ac2;
+}

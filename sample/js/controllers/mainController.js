@@ -1,4 +1,4 @@
-app.controller('mainController', ['$scope', function ($scope) {
+app.controller('mainController', ['$scope', 'forecast', function ($scope, forecast) {
   $scope.products = [
     {
       title: "First Book",
@@ -47,4 +47,9 @@ app.controller('mainController', ['$scope', function ($scope) {
       developer: 'Armando P.',
       price: 1.99
     }];
+
+  //get data from service
+  forecast.success(function (data) {
+    $scope.weatherData = data
+  });
 }]);

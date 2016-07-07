@@ -85,3 +85,33 @@
 .active .button{
     background: #007ac2;
 }
+/*----------styles for info fetched from services----------*/
+.sample3{
+    display: inline-block;
+}
+.weatherInfo {
+    display: inline-block;
+    border: 1px solid #dadada;
+    box-shadow: 3px 2px 2px #dadada;
+    margin: 10px;
+    padding: 5px;
+    background:#eee;
+}
+.cityName{
+    border: 1px solid #dadada;
+    box-shadow: 3px 3px 2px #dadada;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    padding: 10px;
+    background:#eee;
+}
+
+.weatherInfoIcon{
+  width:50px;
+  height:50px;
+}
+
+.dayInfo{
+    display: inline-block;
+}

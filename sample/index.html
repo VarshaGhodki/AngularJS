@@ -6,6 +6,7 @@
 <body ng-app="firstApp">
 
   <div ng-controller="mainController">
+    <!--ng-repeat example code-->
     <div class="sample1">
       <h3> Example - Ng-Repeat </h3>
       <div class="productContainer" ng-repeat="x in products">
@@ -14,13 +15,23 @@
         <div class="likes" ng-click="plusOne($index)">+{{x.likes}}</div>
         <div class="dislikes" ng-click="minusOne($index)">-{{x.dislikes}}</div>
       </div>
-
     </div>
+    <!--custom and interactive directive example code-->
     <div class="sample2">
       <h3> Example - Custom directives </h3>
       <div ng-repeat="item in apps" class="card ">
         <app-info info=item></app-info>
         <install-app></install-app>
+      </div>
+    </div>
+    <!--service, dependency example code -->
+    <div class="sample3">
+      <h3> Example - Service (Dependency Injection) </h3>
+      <div class="cityName">{{weatherData.city_name}},
+        <span class="countryName">{{weatherData.country}}</span>
+      </div>
+      <div class="weatherInfo" ng-repeat="day in weatherData.days">
+        <weather-info info=day></weather-info>
       </div>
     </div>
   </div>
@@ -32,5 +43,9 @@
   <script src="js/controllers/mainController.js "></script>
   <script src="js/directives/appInfo.js "></script>
   <script src="js/directives/installApp.js "></script>
+  <script src="js/directives/weatherInfo.js "></script>
+  <!-- Services -->
+  <script src="js/services/forecast.js "></script>
+
 </body>
 </html>

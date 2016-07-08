@@ -1,3 +1,15 @@
+.exampleHeader{
+    padding:0px 10px;
+}
+.exampleTitle{
+    background: #eee;
+    height: 35px;
+    line-height: 35px;
+    margin: 10px 0px;
+    box-shadow: 4px 3px 2px #afafaf;
+    padding: 0px 10px;
+}
+
 .image{
   width:100px;
   height:150px;
@@ -67,7 +79,7 @@
     overflow: hidden;
     position: relative;
     display: inline-block;
-    margin: 0 2px;
+    margin: 10px 10px;
     position: relative;
 }
 .button{
@@ -114,4 +126,21 @@
 
 .dayInfo{
     display: inline-block;
+}
+/*Routing Example*/
+
+.photosContainer{
+    border: 1px solid ivory;
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 3px 1px 5px;
+}
+
+.photoIcon{
+    width: 250px;
+    height: 250px;
+}
+.link{
+     width: 100%; 
+     text-align: right; 
 }

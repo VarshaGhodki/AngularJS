@@ -1,0 +1,32 @@
+<div>
+  <div class="link">
+    <a href="#/gallery/">Show Gallery</a></div>
+  <!--ng-repeat example code-->
+  <div class="exampleHeader">
+    <div class="exampleTitle"> Example - Ng-Repeat </div>
+    <div class="productContainer" ng-repeat="x in products">
+      <h3> {{x.title}}</h3>
+      <img class="image" ng-src={{x.coverPage}} />
+      <div class="likes" ng-click="plusOne($index)">+{{x.likes}}</div>
+      <div class="dislikes" ng-click="minusOne($index)">-{{x.dislikes}}</div>
+    </div>
+  </div>
+  <!--custom and interactive directive example code-->
+  <div class="exampleHeader">
+    <div class="exampleTitle"> Example - Custom directives </div>
+    <div ng-repeat="item in apps" class="card ">
+      <app-info info=item></app-info>
+      <install-app></install-app>
+    </div>
+  </div>
+  <!--service, dependency example code -->
+  <div class="exampleHeader">
+    <div class="exampleTitle"> Example - Service (Dependency Injection) </div>
+    <div class="cityName">{{weatherData.city_name}},
+      <span class="countryName">{{weatherData.country}}</span>
+    </div>
+    <div class="weatherInfo" ng-repeat="day in weatherData.days">
+      <weather-info info=day></weather-info>
+    </div>
+  </div>
+</div>
